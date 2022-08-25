@@ -74,7 +74,7 @@ input {
 
 .tophead {
     text-transform: capitalize;
-    font-size: var(--rem3);
+    font-size: 2.5rem;
 }
 
 .header {
@@ -138,7 +138,8 @@ nav button {
 }
 
 .logo {
-    font: 1rem var(--bestrock);
+    font: 1rem;
+    font-family: "Times New Roman";
     margin: 0;
     font-weight: 600;
     font-size: 1.5rem;
@@ -221,7 +222,9 @@ nav button {
 
 .container3 {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    gap: 1rem;
     margin-bottom: var(--rem2);
 }
 
@@ -241,7 +244,8 @@ nav button {
     width: 300px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    overflow: hidden;
+    margin: 0 1rem;
+    cursor: pointer;
 }
 
 .shirtcard-img {
@@ -265,7 +269,7 @@ nav button {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(233, 232, 225);
+    background-color: rgb(0, 0, 0);
     z-index: 10;
     opacity: 0.8;
 }
@@ -297,7 +301,7 @@ nav button {
 
 .shirtcard-img:hover .overlay {
     visibility: visible;
-    animation: fade 0.5s;
+    animation: fade 0.3s;
 }
 
 @keyframes fade {
@@ -305,7 +309,7 @@ nav button {
         opacity: 0;
     }
     100% {
-        opacity: 0.8;
+        opacity: 0.2;
     }
 }
 
@@ -338,15 +342,6 @@ nav button {
     font-weight: 600;
     font-size: 1.1rem;
     letter-spacing: 0.5px
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    margin: 0;
 }
 
 .more-link {
@@ -438,7 +433,7 @@ nav button {
 
 .thegian img {
     width: 100%;
-    height: 72.5%;
+    height: 400px;
 }
 
 .thegian .main-btn {
@@ -464,9 +459,15 @@ nav button {
     height: auto;
 }
 
+.container6 section {
+    display: flex;
+    align-items: center;
+}
+
 .container6 section img {
     margin-top: 2em;
-    width: 100%;
+    width: 50%;
+    height: 100%;
     z-index: -10;
 }
 
@@ -565,16 +566,6 @@ footer li:hover {
     text-align: center;
 }
 
-::-webkit-scrollbar {
-    width: 0.8rem;
-    background: rgb(49, 49, 49);
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(170, 170, 170);
-    border-radius: .5rem;
-}
-
 
 /**/
 
@@ -582,6 +573,9 @@ footer li:hover {
     p,
     a {
         font-size: 0.85rem;
+    }
+    .container3 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -640,9 +634,14 @@ footer li:hover {
     .show-links li {
         margin-top: 2rem;
     }
+    .container3 {
+        margin: 0;
+    }
+    .container {
+        margin: 1rem;
+    }
     .container1,
     .container2,
-    .container3,
     .shirt-container,
     .imagecontain,
     .container7,
@@ -665,7 +664,7 @@ footer li:hover {
         display: none;
     }
     .tophead {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .feature-card.number2 img {
         width: fit-content;
@@ -697,6 +696,9 @@ footer li:hover {
     .container {
         margin: 0 auto;
         width: 95%;
+    }
+    .container3 {
+        grid-template-columns: 100%;
     }
     .newin2 a {
         font-size: 0.7rem;
