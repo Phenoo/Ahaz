@@ -697,6 +697,9 @@ footer li:hover {
         margin: 0 auto;
         width: 95%;
     }
+    .main-btn {
+        font-size: 0.75rem;
+    }
     .container3 {
         grid-template-columns: 100%;
     }
